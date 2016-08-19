@@ -13252,7 +13252,7 @@ Make sure to keep track of the various features and conditions you tried before 
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer</strong>: 80.36%</p>
+<p><strong>Answer</strong>: 80.36%. I first tried to use the gender and age fields that were given as a hint. I couldn't seem to increase the percentage by much so I thought I would take the route of figuring out if I can decrease the number of false positives, because earlier it was stated that most people died so this seemed like the best option, I gave the females and people under 10. I started with the females. I tried Pclass (because it seemed logical that higher class people would get priority), and finally settled on SibSp (because less people you have with you the less people you need to have on the boat). Of the two I saw a better division when using SibSp for females. As for limiting the age I first had to check whether all people younger than 10 survived, which didn't seem to be the case. With that in mind I chose to limit my search first by SibSp (using the same logic as before that less people you are with the less people you will take with you on the boat and they are kids so parents would probably not leave them), next I tried Parch with the same logic that parents would probably stay with their kids, and when neither of those worked out to be helpful I finally chose to use Pclass because I could see how rich kids might be given priority over poor kids. One final thing I wanted to use was the price of the ticket, but that didn't really make a difference... well it wouldn't increase the percentage.</p>
 
 </div>
 </div>
